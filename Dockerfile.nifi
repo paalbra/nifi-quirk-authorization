@@ -1,0 +1,5 @@
+FROM apache/nifi:latest
+
+COPY nifi-custom-start.sh /opt/nifi/scripts/nifi-custom-start.sh
+
+ENTRYPOINT ["/opt/nifi/scripts/nifi-custom-start.sh"]
